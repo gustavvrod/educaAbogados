@@ -2,7 +2,7 @@
   <v-app>
     <v-app-bar color="blue-grey darken-1" dark dense app>
       <div class="d-flex align-center">
-        <v-btn :to="{ name: 'home' }" text class="mr-2">Educa Abogados</v-btn>
+        <v-btn :to="{ name: 'Home' }" text class="mr-2">Educa Abogados</v-btn>
       </div>
 
       <v-spacer></v-spacer>
@@ -13,13 +13,13 @@
       >
       </v-app-bar-nav-icon>
       <div class="d-none d-md-block d-lg-block d-xl-block">
-        <v-btn :to="{ name: 'home' }" text
+        <v-btn href="#homeComponent" text
           ><span class="mr-2">Inicio</span></v-btn
         >
-        <v-btn :to="{ name: 'opiniones' }" text
+        <v-btn href="#serviciosComponent" text
           ><span class="mr-2">Servicios</span></v-btn
         >
-        <v-btn :to="{ name: 'administracion' }" text
+        <v-btn href="#nosotrosComponent" text
           ><span class="mr-2">Nosotros</span></v-btn
         >
       </div>
@@ -41,18 +41,18 @@
 
       <v-list dense>
         <v-list-item>
-          <v-btn :to="{ name: 'home' }" text
+          <v-btn href="#homeComponent" text
             ><span class="mr-2">Inicio</span></v-btn
           >
         </v-list-item>
         <v-list-item>
-          <v-btn :to="{ name: 'opiniones' }" text
-            ><span class="mr-2">Opiniones</span></v-btn
+          <v-btn href="#serviciosComponent" text
+            ><span class="mr-2">Servicios</span></v-btn
           >
         </v-list-item>
         <v-list-item>
-          <v-btn :to="{ name: 'administracion' }" text
-            ><span class="mr-2">Administracion</span></v-btn
+          <v-btn href="#nosotrosComponent" text
+            ><span class="mr-2">Nosotros</span></v-btn
           >
         </v-list-item>
       </v-list>

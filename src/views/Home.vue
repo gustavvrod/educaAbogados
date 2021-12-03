@@ -1,15 +1,24 @@
 <template>
-  <hello-world />
+  <div>
+    <homecomponent id="homeComponent" class="mb-12" />
+    <servicioscomponent id="serviciosComponent" class="mt-12" />
+    <nosotroscomponent id="nosotrosComponent" class="mt-12" />
+  </div>
 </template>
 
 <script>
-  import HelloWorld from '../components/HelloWorld'
+import Homecomponent from "../components/Homecomponent.vue";
+import Nosotroscomponent from "../components/Nosotroscomponent.vue";
+import Servicioscomponent from "../components/Servicioscomponent.vue";
 
-  export default {
-    name: 'Home',
+export default {
+  name: "Home",
 
-    components: {
-      HelloWorld,
-    },
-  }
+  components: {
+    Homecomponent,
+    Servicioscomponent,
+    Nosotroscomponent,
+  },
+};
 </script>
+
